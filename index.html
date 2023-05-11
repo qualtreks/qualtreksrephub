@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Internal Information Website</title>
+    <title>Contact Center Knowledge Base</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Internal Information Website</h1>
+        <h1>Contact Center Knowledge Base</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#recent">Recently Added</a></li>
+                <li><a href="#submit">Submit a Ticket</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are a company that provides internal information to agents.</p>
+        <section id="search">
+            <h2>Search</h2>
+            <form action="search.php" method="get">
+                <label for="search-query">Enter a keyword or phrase:</label>
+                <input type="text" id="search-query" name="search-query" required>
+                <input type="submit" value="Search">
+            </form>
         </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
+        <section id="categories">
+            <h2>Categories</h2>
             <ul>
-                <li><a href="documents/employee-handbook.pdf">Employee Handbook</a></li>
-                <li><a href="documents/benefits-summary.pdf">Benefits Summary</a></li>
-                <li><a href="documents/401k-plan.pdf">401k Plan</a></li>
-                <li><a href="documents/payroll-schedule.pdf">Payroll Schedule</a></li>
+                <li><a href="category.php?cat=account">Account</a></li>
+                <li><a href="category.php?cat=payments">Payments</a></li>
+                <li><a href="category.php?cat=shipping">Shipping</a></li>
+                <li><a href="category.php?cat=returns">Returns</a></li>
             </ul>
+            <p>Choose a category to see related articles.</p>
         </section>
 
-        <section id="team">
-            <h2>Our Team</h2>
+        <section id="recent">
+            <h2>Recently Added</h2>
             <ul>
-                <li><img src="images/person1.jpg" alt="Person 1"><p>John Smith - CEO</p></li>
-                <li><img src="images/person2.jpg" alt="Person 2"><p>Jane Doe - CFO</p></li>
-                <li><img src="images/person3.jpg" alt="Person 3"><p>Bob Johnson - COO</p></li>
+                <li><a href="article.php?id=123">How to Change Your Account Password</a></li>
+                <li><a href="article.php?id=124">How to Update Your Payment Method</a></li>
+                <li><a href="article.php?id=125">How to Track Your Shipment</a></li>
+                <li><a href="article.php?id=126">How to Initiate a Return</a></li>
             </ul>
+            <p>View our most recently added articles.</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="submit-form.php" method="post">
+        <section id="submit">
+            <h2>Submit a Ticket</h2>
+            <form action="ticket.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
+                <label for="description">Describe the issue:</label>
+                <textarea id="description" name="description" required></textarea>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit Ticket">
             </form>
+            <p>Submit a ticket to contact our support team directly.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Internal Information Website</p>
+        <p>&copy; 2023 Contact Center Knowledge Base</p>
     </footer>
 </body>
 </html>
