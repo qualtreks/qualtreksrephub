@@ -100,18 +100,24 @@
             border-radius: 5px;
             padding: 10px;
             margin-right: 20px;
+            cursor: pointer; /* added to change cursor to pointer on hover */
         }
 
-.alert img {
-    height: 20px;
-    margin-right: 10px;
-}
+        .alert:hover {
+            background-color: #ffca2c; /* added to change background color on hover */
+        }
 
-.alert p {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-}
+        .alert img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .alert p {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
 
 
         section {
@@ -179,10 +185,10 @@
                     <p>Agent ID: 12345</p>
                 </div>
                 <h1>Qualtreks Rep Knowledge Base</h1>
-                <div class="alert">
+                <a href="#shipping-updates" class="alert">
                     <img src="shipping-alert.png" alt="Reston Shipping Alert">
                     <p>Reston Shipping Alert</p>
-                </div>
+                </a>
                 <nav>
                     <ul>
                         <li><a href="#search">Search</a></li>
