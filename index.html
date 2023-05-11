@@ -177,12 +177,13 @@
             background-color: #999;
         }
         .shipping-alert {
-            border-left: 5px solid #333;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
             display: flex;
             align-items: center;
-            margin: 0 auto;
-            max-width: 800px;
-            padding: 20px;
         }
 
         .alert-img-container {
@@ -196,7 +197,7 @@
         .shipping-content {
             flex-grow: 1;
         }
-                
+
     </style>
             </head>
             <body>
@@ -232,19 +233,21 @@
                 </section>
 
 
-                <div class="shipping-alert" id="shipping-updates">
+                <section class="shipping-alert" id="shipping-updates">
                     <div class="alert-img-container">
                         <img src="shipping-alert.png" alt="Reston Shipping Alert" class="alert-img">
                     </div>
                     <div class="shipping-content">
-                        <h2>Shipping Updates</h2>
+                        <h2>Shipping Delays in the Reston Area</h2>
                         <p>Here are the latest shipping updates:</p>
                         <ul>
-                            <li>Orders placed after 3pm EST will be shipped the following day</li>
-                            <li>Deliveries may be delayed due to inclement weather in some areas</li>
+                            <li>Delays due some of our drivers being unable to make it to the warehouse.</li>
+                            <li>This issue is expected to be resolved by 1PM EST On May 16th.</li>
+                            <li>Promotional Offer - "MAKEGOOD" which gives the customer free overnight shipping to make up for this issue.</li>
                         </ul>
                     </div>
-                </div>
+                </section>
+
 
 
 
