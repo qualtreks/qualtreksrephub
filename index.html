@@ -186,6 +186,8 @@
             display: flex;
             align-items: center;
             max-width: 600px;
+            margin-left: auto;
+
         }
 
         .alert-img-container {
@@ -198,6 +200,47 @@
 
         .shipping-content {
             flex-grow: 1;
+        }
+
+        .new-items {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            max-width: 300px;
+        }
+
+        .new-items h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .new-items ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .new-items li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .new-items li img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .new-items li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .new-items li a:hover {
+            text-decoration: underline;
         }
 
     </style>
@@ -234,6 +277,20 @@
                     </form>
                 </section>
 
+                <section class="new-items">
+                    <h2>New In Stock Items</h2>
+                        <ul>
+                            <li>
+                                <img src="item1.jpg" alt="Item 1">
+                                <a href="#">Item 1</a>
+                            </li>
+                            <li>
+                                <img src="item2.jpg" alt="Item 2">
+                                <a href="#">Item 2</a>
+                            </li>
+                        </ul>
+
+                </section>
 
                 <section class="shipping-alert" id="shipping-updates">
                     <div class="alert-img-container">
