@@ -176,6 +176,27 @@
         form input[type="submit"]:hover {
             background-color: #999;
         }
+        .shipping-alert {
+            border-left: 5px solid #333;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .alert-img-container {
+            margin-right: 20px;
+        }
+
+        .alert-img {
+            height: 50px;
+        }
+
+        .shipping-content {
+            flex-grow: 1;
+        }
+                
     </style>
             </head>
             <body>
@@ -209,6 +230,23 @@
                         <input type="submit" value="Search">
                     </form>
                 </section>
+
+
+                <div class="shipping-alert" id="shipping-updates">
+                    <div class="alert-img-container">
+                        <img src="shipping-alert.png" alt="Reston Shipping Alert" class="alert-img">
+                    </div>
+                    <div class="shipping-content">
+                        <h2>Shipping Updates</h2>
+                        <p>Here are the latest shipping updates:</p>
+                        <ul>
+                            <li>Orders placed after 3pm EST will be shipped the following day</li>
+                            <li>Deliveries may be delayed due to inclement weather in some areas</li>
+                        </ul>
+                    </div>
+                </div>
+
+
 
                 <section id="shipping-delays">
                     <h2>Shipping Delays in Reston Area</h2>
