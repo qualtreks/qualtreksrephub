@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <style>
+
         body {
             background-color: #f5f5f5;
             color: #333;
@@ -92,6 +93,27 @@
             font-weight: bold;
         }
 
+        .alert {
+            display: flex;
+            align-items: center;
+            background-color: #ffc107;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+.alert img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.alert p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
         section {
             background-color: #fff;
             border-radius: 5px;
@@ -157,6 +179,10 @@
                     <p>Agent ID: 12345</p>
                 </div>
                 <h1>Qualtreks Rep Knowledge Base</h1>
+                <div class="alert">
+                    <img src="shipping-alert.png" alt="Reston Shipping Alert">
+                    <p>Reston Shipping Alert</p>
+                </div>
                 <nav>
                     <ul>
                         <li><a href="#search">Search</a></li>
